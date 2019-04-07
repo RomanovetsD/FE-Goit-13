@@ -144,6 +144,17 @@ a {
     height: 700px;
     background-image: url(../img/header-bg@tablet.jpg);
   }
+   
+  .title-header {
+    width: 510px;
+    display: inline-block;
+    font-size: 52px;
+  }
+
+  .sub-header {
+  font-size: 24px;
+  }
+  
 }
 
 @media (min-width: 960px) {
