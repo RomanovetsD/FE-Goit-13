@@ -5,14 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Lifestyle</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <title>HW-10</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -22,8 +19,8 @@
   <div class="fluid-header">
     <div class="picture-map">
       <picture>
-        <img class="wrp-image" srcset="./img/eagle-min.jpg 1920w, ./img/eagle@2x-min.jpg 3840w" sizes="1920px"
-          src="./img/eagle.jpg" height="1000" alt="eagle">
+        <source media="(min-width: 1024px)" srcset="./img/eagle.jpg 1x, ./img/eagle@2x.jpg 2x">
+        <img src="./img/eagle.jpg" height="1000" alt="eagle" class="wrp-image">
       </picture>
     </div>
 
@@ -34,15 +31,15 @@
           <a href="#"><img src="./img/logo-min.png" alt="logo" class="logo"></a></div>
         <nav class="nav-header col-5">
           <ul class="menu">
-            <li class="list-item"><a href="#" class="menu-link">About</a></li>
-            <li class="list-item"><a href="#" class="menu-link">Service</a></li>
-            <li class="list-item"><a href="#" class="menu-link">Work</a></li>
-            <li class="list-item"><a href="#" class="menu-link">Blog</a></li>
-            <li class="list-item"><a href="#" class="menu-link">Contact</a></li>
-            <li class="list-item"><a href="#" class="menu-link"><img src="./img/shopping_cart-min.png"
-                  alt="shopping_cart" class="shopping_cart"></a></li>
-            <li class="list-item"><a href="#" class="menu-link"><img src="./img/glass-min.png" alt="glass"
-                  class="glass"></a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Service</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Work</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+            <li class="menu__item"><a href="#" class="menu__link"><img src="./img/shopping_cart-min.png"
+                  alt="shopping_cart" class="menu__link--shopping_cart"></a></li>
+            <li class="menu__item"><a href="#" class="menu__link"><img src="./img/glass-min.png" alt="glass"
+                  class="menu__link--glass"></a></li>
           </ul>
         </nav>
       </header>
@@ -54,9 +51,9 @@
   </div>
   <div class="wrapper">
     <div class="main">
-      <h3 class="subtitle">We work with</h3>
-      <h2 class="title">Amazing services</h2>
-      <div class="row services">
+      <h3 class="main__subtitle">We work with</h3>
+      <h2 class="main__title">Amazing services</h2>
+      <div class="service">
         <div class="service__wrp col-4 row">
           <div class="service__icon">
             <a href="#">
@@ -139,121 +136,119 @@
         </div>
       </div>
     </div>
-    <h3 class="subtitle">Who we are</h3>
-    <h2 class="title title-mdl">Meet out team</h2>
+    <h3 class="middle__title">Who we are</h3>
+    <h2 class="middle__subtitle">Meet out team</h2>
     <p class="middle-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis itaque
       eveniet nobis provident, eaque laboriosam sit et nihil vel voluptate unde quaerat perspiciatis inventore sunt
       nulla ea dolorem nesciunt?</p>
 
     <div class="middle-card">
-      <div class="card">
-        <div class="card__purchase"></div>
-        <div class="card__wrp">
-          <picture>
-            <img class="btn-image" srcset="./img/img-1-min.jpg 470w, ./img/img-1@2x-min.jpg 960w" sizes="470px"
-              src="./img/img-1-min.jpg" alt="first man">
-          </picture>
-          <div class="card__img">
-            <button class="card__btn card__btn--facebook">
-              <svg>
-                <use href="./img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--twitter">
-              <svg>
-                <use href="./img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--pinterest">
-              <svg>
-                <use href="./img/sprite.svg#icon-pinterest"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--instagram">
-              <svg>
-                <use href="./img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </button>
+      <div class="slip">
+        <div class="card">
+          <div class="card__purchase"></div>
+          <div class="card__wrp">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./img/img_1.jpg 1x, ./img/img_1@2x.jpg 2x">
+              <img src="./img/img_1.jpg" alt="first man">
+            </picture>
+            <div class="card__img">
+              <button class="card__btn card__btn--facebook">
+                <svg>
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--twitter">
+                <svg>
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--pinterest">
+                <svg>
+                  <use href="./img/sprite.svg#icon-pinterest"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--instagram">
+                <svg>
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+        <h4 class="card__subtitle">Matthew Dix</h4>
+        <h5 class="card__title">Graphic Disign</h5>
+      </div>
+      <div class="slip">
+        <div class="card">
+          <div class="card__purchase"></div>
+          <div class="card__wrp">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./img/img_2.jpg 1x, ./img/img_2@2x.jpg 2x">
+              <img src="./img/img_2.jpg" alt="second man">
+            </picture>
+            <div class="card__img">
+              <button class="card__btn card__btn--facebook">
+                <svg>
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--twitter">
+                <svg>
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--pinterest">
+                <svg>
+                  <use href="./img/sprite.svg#icon-pinterest"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--instagram">
+                <svg>
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <h4 class="card__subtitle">Christopher Campbel</h4>
+        <h5 class="card__title">Brandix/Ux design</h5>
+      </div>
+      <div class="slip">
+        <div class="card">
+          <div class="card__purchase"></div>
+          <div class="card__wrp">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./img/img_3.jpg 1x, ./img/img_3@2x.jpg 2x">
+              <img src="./img/img_3.jpg" alt="third man">
+            </picture>
+            <div class="card__img">
+              <button class="card__btn card__btn--facebook">
+                <svg>
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--twitter">
+                <svg>
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--pinterest">
+                <svg>
+                  <use href="./img/sprite.svg#icon-pinterest"></use>
+                </svg>
+              </button>
+              <button class="card__btn card__btn--instagram">
+                <svg>
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <h4 class="card__subtitle">Michael Ferting</h4>
+        <h5 class="card__title">Developer</h5>
       </div>
 
-      <div class="card">
-        <div class="card__purchase"></div>
-        <div class="card__wrp">
-          <picture>
-            <img class="btn-image" srcset="./img/img-2-min.jpg 470w, ./img/img-2@2x-min.jpg 960w" sizes="470px"
-              src="./img/img-2-min.jpg" alt="second man">
-          </picture>
-          <div class="card__img">
-            <button class="card__btn card__btn--facebook">
-              <svg>
-                <use href="./img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--twitter">
-              <svg>
-                <use href="./img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--pinterest">
-              <svg>
-                <use href="./img/sprite.svg#icon-pinterest"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--instagram">
-              <svg>
-                <use href="./img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__purchase"></div>
-        <div class="card__wrp">
-          <picture>
-            <img class="btn-image" srcset="./img/img-3-min.jpg 470w, ./img/img-3@2x-min.jpg 960w" sizes="470px"
-              src="./img/img-3-min.jpg" alt="third man">
-          </picture>
-          <div class="card__img">
-            <button class="card__btn card__btn--facebook">
-              <svg>
-                <use href="./img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--twitter">
-              <svg>
-                <use href="./img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--pinterest">
-              <svg>
-                <use href="./img/sprite.svg#icon-pinterest"></use>
-              </svg>
-            </button>
-            <button class="card__btn card__btn--instagram">
-              <svg>
-                <use href="./img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-ftr">
-      <div class="title-ftr">
-        <h4 class="ftr-subtitle">Matthew Dix</h4>
-        <h5 class="ftr-title">Graphic Disign</h5>
-      </div>
-      <div class="title-ftr">
-        <h4 class="ftr-subtitle">Christopher Campbell</h4>
-        <h5 class="ftr-title">Brandix/Ux design</h5>
-      </div>
-      <div class="title-ftr">
-        <h4 class="ftr-subtitle">Michael Ferting</h4>
-        <h5 class="ftr-title">Developer</h5>
-      </div>
     </div>
     <hr class="shape">
     <footer class="ftr">
