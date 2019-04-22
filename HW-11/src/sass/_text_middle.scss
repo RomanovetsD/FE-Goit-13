@@ -1,0 +1,11 @@
+.text-middle {
+    font-size: 150px;
+    margin: 0 auto;
+    display: block;
+    width: 830px;
+    @extend %montserrat;
+    color: $white-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }

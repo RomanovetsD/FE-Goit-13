@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+  
+:root {
+    --col: 80px;
+    --gap: 20px;
+    --cl: calc(var(--col) + var(--gap));
+}
+  
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    @extend %montserrat;
+    color: $white-color;
+    text-transform: uppercase;
+}

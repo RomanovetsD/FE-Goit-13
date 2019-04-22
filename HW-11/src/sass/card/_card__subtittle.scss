@@ -1,0 +1,8 @@
+.card__subtitle {
+    text-align: center;
+    font-size: 14px;
+    @extend %montserrat;
+    color: $subtitle-color;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}

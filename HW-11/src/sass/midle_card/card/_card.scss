@@ -1,0 +1,67 @@
+.card {
+    width: 361px;
+    position: relative;
+    height: 467px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    z-index: 25;
+
+    &__purchase {
+        position: absolute;
+        opacity: 0.5;
+        margin: 0 auto;
+        width: 361px;
+        height: 467px;
+        z-index: 5;
+        margin: 0;
+    }
+
+    &__img {
+        position: absolute;
+        opacity: 0;
+        right: 0px;
+        bottom: 0px;
+        width: 361px;
+        height: 477px;
+        z-index: 10;
+        margin: 0;
+      }
+
+    &:hover {
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        opacity: 1;
+        -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+        transform: translate(-10px, -10px);
+        -webkit-box-shadow: 10px 10px $aqua-color;
+        box-shadow: 10px 10px $aqua-color;
+    }
+
+    &:hover &__purchase {
+        background: -webkit-linear-gradient(
+          left,
+          $link-color 0%,
+          $orange-red-color 100%
+        );
+        background: -o-linear-gradient(
+          left,
+          $link-color 0%,
+          $orange-red-color 100%
+        );
+        background: linear-gradient(
+          90deg,
+          $link-color 0%,
+          $orange-red-color 100%
+        );
+      }
+      
+      .card:hover .card__img {
+        opacity: 1;
+      }
+
+    background-color: $link-color;
+
+ }
+  

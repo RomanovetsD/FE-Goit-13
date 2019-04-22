@@ -1,0 +1,8 @@
+.card__title {
+    font-size: 15px;
+    @extend %roboto;
+    color: $descr-color;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+  }

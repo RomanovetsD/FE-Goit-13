@@ -1,0 +1,19 @@
+.card__btn {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    bottom: 208px;
+    border: none;
+    width: 55px;
+    height: 55px;
+    background-color: $link-color;
+}
+
+.card__btn:hover,
+.card__btn:focus {
+        background-color: $orange-red-color;
+}
+
+.card__btn:hover svg {
+    fill: $white-color;
+}

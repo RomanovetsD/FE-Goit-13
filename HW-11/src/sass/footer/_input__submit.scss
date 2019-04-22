@@ -1,0 +1,12 @@
+input[type="submit"] {
+    width: 160px;
+    height: 40px;
+    background: var(--main);
+    border: none;
+    color: $white-color;
+    background-color: $aqua-color;
+    text-transform: uppercase;
+    @extend %montserrat;
+    font-size: 14px;
+    font-weight: bold;
+  }

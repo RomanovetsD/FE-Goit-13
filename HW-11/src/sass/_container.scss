@@ -1,0 +1,14 @@
+.container {
+    width: 1200px;
+    z-index: 5;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 165px;
+  }
+  

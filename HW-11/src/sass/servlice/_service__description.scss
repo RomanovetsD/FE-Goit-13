@@ -1,0 +1,6 @@
+.service__description {
+    font-size: 15px;
+    @extend %roboto;
+    color: $descr-color;
+    line-height: 1.6;
+}

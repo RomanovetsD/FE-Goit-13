@@ -1,0 +1,12 @@
+.middle-text {
+    margin: 0 auto;
+    font-size: 15px;
+    @extend %roboto;
+    color: $descr-color;
+    line-height: 1.6;
+    text-align: center;
+    display: block;
+    width: 980px;
+    margin-bottom: 92px;
+  }
+  

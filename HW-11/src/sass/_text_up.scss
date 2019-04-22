@@ -1,0 +1,7 @@
+.text-up {
+    font-size: 72px;
+    @extend %kaushan;
+    color: $white-color;
+    text-align: center;
+    margin-bottom: 70px;
+}

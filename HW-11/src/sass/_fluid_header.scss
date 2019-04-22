@@ -1,0 +1,10 @@
+.fluid-header {
+  width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+  z-index: 3;
+  background: -webkit-gradient(linear, left bottom, left top, from($link-color), to($orange-red-color));
+  background: -webkit-linear-gradient(bottom, $link-color, $orange-red-color);
+  background: -o-linear-gradient(bottom, $link-color, $orange-red-color);
+  background: linear-gradient(to top, $link-color, $orange-red-color);
+}

@@ -1,0 +1,24 @@
+input::-webkit-input-placeholder {
+    color: $footer-color;
+    @extend %roboto;
+    font-style: italic;
+    font-size: 15px;
+  }
+  input:-ms-input-placeholder {
+    color: $footer-color;
+    @extend %roboto;
+    font-style: italic;
+    font-size: 15px;
+  }
+  input::-ms-input-placeholder {
+    color: $footer-color;
+    @extend %roboto;
+    font-style: italic;
+    font-size: 15px;
+  }
+  input::placeholder {
+    color: $footer-color;
+    @extend %roboto;
+    font-style: italic;
+    font-size: 15px;
+  }
